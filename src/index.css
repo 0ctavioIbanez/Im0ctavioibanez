@@ -32,7 +32,8 @@ li{
  =============================================================================== */
 :root{
   --azul: #00b0f0;
-  --girs: rgb(198, 196, 196);
+  --girs: rgb(198, 197, 196);
+  --naranja: rgb(224, 0, 0);
 }
 .container{
   max-width: 120rem;
@@ -44,4 +45,48 @@ li{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.titulo{
+  text-align: center;
+  color: var(--azul);
+  font-size: 3.5rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.btn-container{
+  justify-content: center;
+  padding: 3rem 0;
+}
+.two-buttons{
+  justify-content: space-around;
+}
+.button{
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: all .3s ease;
+  background-color: transparent;
+}
+.button:hover{
+  cursor: pointer;
+}
+.btn-primary{
+  border: 1px solid var(--azul);
+  background-color: var(--azul);
+  color: white;
+}
+.btn-primary:hover{
+  box-shadow: 5px 5px 10px rgba(0,176,240,.4);
+}
+
+.btn-secundary{
+  color: rgb(224, 0, 0);
+  border: 1px solid var(--naranja);
+}
+.btn-secundary:hover{
+  box-shadow: 5px 5px 10px rgba(224, 0, 0, .2);
 }

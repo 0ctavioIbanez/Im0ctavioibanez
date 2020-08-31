@@ -1,0 +1,11 @@
+.card{
+    width: calc(25% - 1rem);
+}
+.card-title{
+    text-align: center;
+    color: var(--azul);
+}
+.card-desc{
+    color: #5F6A6A;
+    line-height: 1.5;
+}
