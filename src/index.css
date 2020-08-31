@@ -1,13 +1,47 @@
-body {
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 1.6rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+input:focus,button:focus{
+  outline: none;
+}
+li{
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ===============================================================================
+    Utilidades
+ =============================================================================== */
+:root{
+  --azul: #00b0f0;
+  --girs: rgb(198, 196, 196);
+}
+.container{
+  max-width: 120rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
