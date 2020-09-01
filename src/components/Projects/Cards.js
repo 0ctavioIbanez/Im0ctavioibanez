@@ -1,32 +1,24 @@
-import React, {Fragment} from 'react';
-
+import React from 'react';
 
 const Cards = ({project}) => {
-    
     return (
-        <Fragment>
-            <div className="card">
-                <div className="card-thumb">
-                    <img src={project.thumb} alt={"thumb_"+project.nombre}></img> 
-                </div>
-                <h3 className="card-title">{project.nombre}</h3>
-                <p className="card-desc">{project.desc}</p>
-                <div className="btn-container flex two-buttons">
-                    <span
-                        className="button btn-secundary"
-                    >
-                        Saber más
-                    </span>
+        <div className="proyecto">
+            <div>
+                <img src={project.thumb} alt={"image_"+project.name} />
+            </div>
+            <div className="proyecto-desc">
+                <h3 className="proyecto-title">{project.nombre}</h3>
+                <p>{project.desc}</p>
+                <div className="center flex">
+                    <button className="button-small btn-secundary">Saber más</button>
                     <a target="_blank" 
                         href={project.url} 
-                        className="button btn-primary"
+                        className="button-small btn-primary"
                         rel="noopener noreferrer"
-                    >
-                        Ver proyecto
-                    </a>
+                    >Ver proyecto</a>
                 </div>
             </div>
-        </Fragment>
+        </div>
     );
 };
 

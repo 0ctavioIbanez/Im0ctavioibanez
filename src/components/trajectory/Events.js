@@ -2,20 +2,6 @@ import React from 'react';
 
 const Events = ({evento}) => {
 
-    let iconStyle = {};
-    let descStyle = {};
-
-    // Config for icon
-    const stylePair = {
-        backgroundColor: evento.color
-    }
-    const styleOdd = {
-        top: '14rem'
-    }
-    
-
-    evento.key % 2 === 0 ? iconStyle = styleOdd : iconStyle = stylePair;
-
     return (
         <div className="timeline-event" style={{border: '5px solid ' + evento.color, boxShadow: '2px 2px 10px '+evento.color+'80'}}>
             <p className="text-center" style={{color: evento.color}}>{evento.anio}</p>

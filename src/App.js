@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Cover from './components/cover/Cover';
 import Projects from './components/Projects/Projects';
 import Trajectory from './components/trajectory/Trajectory';
+import Techs from './components/Techs/Technologies';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Cover />
       <Projects />
       <Trajectory />
+      <Techs />
     </div>
   );
 }

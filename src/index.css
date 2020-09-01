@@ -28,6 +28,7 @@ li{
 }
 section{
   min-height: 100vh;
+  margin-top: 12rem;
 }
 
 /* ===============================================================================
@@ -40,6 +41,9 @@ section{
   --naranja: #E6992E;
   --lila: #AD13A1;
   --navy: #283747;
+}
+.white{
+  color: white!important;
 }
 .container{
   max-width: 120rem;
@@ -78,6 +82,10 @@ section{
   justify-content: center;
   padding: 3rem 0;
 }
+.center{
+  justify-content: center;
+}
+
 .two-buttons{
   justify-content: space-around;
 }
@@ -87,6 +95,13 @@ section{
   border-radius: 1rem;
   transition: all .3s ease;
   background-color: transparent;
+}
+.button-small{
+  font-size: 1.6rem;
+  padding: .5rem;
+  transition: all .3s ease;
+  background-color: transparent;
+  border-radius: .5rem;
 }
 .button:hover{
   cursor: pointer;
@@ -101,9 +116,11 @@ section{
 }
 
 .btn-secundary{
-  color: rgb(224, 0, 0);
+  color: var(--naranja);
   border: 1px solid var(--naranja);
+  margin-right: 3rem;
 }
 .btn-secundary:hover{
-  box-shadow: 5px 5px 10px rgba(224, 0, 0, .2);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(230, 153, 46, .4);
 }

@@ -26,12 +26,19 @@ const Projects = () => {
             url: 'https://0ctavioibanez.github.io/tarian/',
             desc: 'Landing page para un buffet de abogados, donde se estaba incorporando un cobro recurrente con la API de PayPal, aunque a petición del despacho, no se continuó con el proyecto',
             thumb: require('../../assets/img/projects-thumbs/tarian-1.png')
+        },
+        {
+            nombre: 'Gestor de negocio', 
+            key: 4,
+            url: '',
+            desc: 'Gestor de ventas, inventario, estadísticas y análisis de productos del negocio SmartLegs',
+            thumb: require('../../assets/img/projects-thumbs/inventario-1.png')
         }
     ];
 
     return (
         <section className="projects">
-            <div className="container">
+            <div className="">
                 <h2 className="titulo">Algúnos de mis proyectos</h2>
                 <div className="card-container flex">
 
