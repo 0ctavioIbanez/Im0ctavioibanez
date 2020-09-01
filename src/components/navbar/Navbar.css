@@ -5,7 +5,7 @@
     width: 100%;
     height: 20rem;
     padding-top: 2rem;
-    background-color: var(--girs);
+    background-color: var(--navy);
     position: relative;
     z-index: 5;
    }
@@ -26,7 +26,6 @@
     color: white;
     text-align: center;
   }
-  
   
   
   .title {
@@ -51,14 +50,12 @@
     margin-top: 2rem;
   }
   .azul{
-    background-image: linear-gradient(90deg,rgb(6, 115, 162), #00b0f0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--gris);
   }
   
   
   .keys{
-    background-color: var(--girs);
+    background-color: var(--navy);
     color: white;
     position: absolute;
     top: -3.5rem;

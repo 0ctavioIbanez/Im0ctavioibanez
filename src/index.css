@@ -26,14 +26,20 @@ input:focus,button:focus{
 li{
   list-style: none;
 }
+section{
+  min-height: 100vh;
+}
 
 /* ===============================================================================
     Utilidades
  =============================================================================== */
 :root{
-  --azul: #00b0f0;
-  --girs: rgb(198, 197, 196);
-  --naranja: rgb(224, 0, 0);
+  --azul: #01ABF5;
+  --azul2: #177899;
+  --gris: rgb(198, 197, 196);
+  --naranja: #E6992E;
+  --lila: #AD13A1;
+  --navy: #283747;
 }
 .container{
   max-width: 120rem;
@@ -50,7 +56,18 @@ li{
 .titulo{
   text-align: center;
   color: var(--azul);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  position: relative;
+}
+.titulo::after{
+  content: '';
+  width: 30rem;
+  height: .5rem;
+  background-image: linear-gradient(to bottom right, var(--naranja), var(--lila), var(--naranja));
+  position: absolute;
+  top: 7rem;
+  left: calc(50% - 15rem);
+  margin: 0 auto;
 }
 
 .text-center{

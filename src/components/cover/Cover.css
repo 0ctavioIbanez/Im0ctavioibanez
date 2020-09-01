@@ -2,12 +2,31 @@
     width: 100%;
     padding: 3rem 0;
     position: relative;
+    background: url(../../assets/img/bgd-cover.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+    line-height: 2;
 }
-.forest-parallax{
+.parallax::before{
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     bottom: 0;
-    width: 100%;
+    right: 0;
+    background-image: linear-gradient(to bottom right, #E6992Ebf,#AD13A1bf, #32587Abf);
+    z-index: 0;
+}
+.parallax .titulo{
+    color: white
 }
 .cover-text{
     margin-top: 12rem;
+}
+h3.text-center{
+    font-size: 3rem;
 }
