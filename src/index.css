@@ -28,7 +28,10 @@ li{
 }
 section{
   min-height: 100vh;
-  margin-top: 12rem;
+  padding: 12rem 0;
+}
+h1,h2,h3{
+  margin-top: 0;
 }
 
 /* ===============================================================================
@@ -71,7 +74,6 @@ section{
   position: absolute;
   top: 7rem;
   left: calc(50% - 15rem);
-  margin: 0 auto;
 }
 
 .text-center{

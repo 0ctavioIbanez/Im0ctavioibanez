@@ -6,6 +6,9 @@ import Cover from './components/cover/Cover';
 import Projects from './components/Projects/Projects';
 import Trajectory from './components/trajectory/Trajectory';
 import Techs from './components/Techs/Technologies';
+import Cursos from './components/cursos/Cursos';
+import Footer from './components/footer/Footer';
+
 
 function App() {
 
@@ -14,9 +17,16 @@ function App() {
     <div className="App">
       <Navbar />
       <Cover />
+
+
+      
+
+
       <Projects />
-      <Trajectory />
+      <Cursos />
       <Techs />
+      <Trajectory />
+      <Footer />
     </div>
   );
 }

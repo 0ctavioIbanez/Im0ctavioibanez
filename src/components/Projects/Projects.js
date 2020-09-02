@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css'
 
-import Card from './Cards';
+import Cards from './Cards';
 
 
 const Projects = () => {
@@ -41,14 +41,10 @@ const Projects = () => {
             <div className="">
                 <h2 className="titulo">Algúnos de mis proyectos</h2>
                 <div className="card-container flex">
-
-                    {listProjects.map( project => (
-                        <Card 
-                            key={project.key}
-                            project={project}
-                        />
-                    ))}
-                   
+                    <Cards 
+                        listProjects={listProjects}
+                    />
+                    
                 </div>
             </div>
         </section>

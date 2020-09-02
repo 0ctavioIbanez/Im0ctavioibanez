@@ -1,42 +1,18 @@
-.card{
-    width: calc(25% - 1rem);
-    margin: 1rem;
-}
-.card-title{
-    text-align: center;
-    color: var(--azul);
-}
-.card-desc{
-    color: #5F6A6A;
-    line-height: 1.5;
-}
-
 .card-container{
-    padding-top: 6rem;
-}
-
-.proyecto{
-    width: 50%;
-    height: 40rem;
-    overflow: hidden;
     position: relative;
+    margin-top: calc(30% - 10rem);
 }
-.proyecto img{
-    transition: all .3s ease;
-}
-.proyecto:hover img{
-    transform: scale(1.2);
-}
-.proyecto-desc{
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    background-image: linear-gradient(rgba(40, 55, 71, .5), rgba(40, 55, 71, .95), var(--navy));
-    bottom: 0;
-    color: white;
+.project-desc{
     padding: 1rem;
 }
-.proyecto-title{
-    text-align: center;
-    color: var(--naranja);
+.project-desc .button-container-small{
+    justify-content: space-around;
+}
+.project-title{
+    font-size: 2rem;
+    color: var(--gris);
+    margin: 1rem 0;
+}
+.project-desc .btn-secundary{
+    color: white;
 }

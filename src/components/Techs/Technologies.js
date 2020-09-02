@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react';
 import './technologies.css'
 
-import bgd from '../../assets/img/binary.png';
-
 import Techs from './TechList';
 
 const Technologies = () => {
@@ -100,30 +98,24 @@ const Technologies = () => {
 
     return (
       <section className="technologies">
-          <div className="binary">
-              
-          </div>
+        <div className="binary"></div>
         <div className="container">
           <h2 className="titulo white">Conocimientos y habilidades</h2>
           <div className="flex">
 
           {techs.map(tech => (
-              <Fragment>
-                  <div className="lenguajes-container langs">
-
-                  </div>
+              <Fragment key={Math.random()}>
+                  <div className="lenguajes-container langs"></div>
                   <div className="flex">
                     <Techs 
                         key="1"
                         lang={tech.lenguajes}
                     />
                   </div>
-                  <div className="lenguajes-container tools">
-
-                  </div>
-                  <div className="flex tools">
+                  <div className="lenguajes-container tools"></div>
+                  <div className="flex lang-tools">
                     <Techs 
-                        key="1"
+                        key="2"
                         lang={tech.tools}
                     />
                   </div>
