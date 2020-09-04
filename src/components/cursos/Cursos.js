@@ -1,8 +1,6 @@
 import React from 'react';
 import './cursos.css';
 
-import ilustracion from '../../assets/img/il-2.png';
-
 import Curso from './Curso';
 
 const Cursos = () => {
@@ -17,13 +15,15 @@ const Cursos = () => {
 
     return (
         <section className="cursos">
-            <img src={ilustracion} className="ilustration" />
             <div className="container">
                 <h1 className="titulo white">Mis cursos</h1>
                 <div className="cursos-container flex">
-                   <Curso 
-                    cursos={cursos}
-                   />
+                    {cursos.map(curso => (
+                        <Curso 
+                            key={Math.random()}
+                            curso={curso} 
+                        />
+                    ))}
                 </div>
             </div>
         </section>

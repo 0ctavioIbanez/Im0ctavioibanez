@@ -50,8 +50,8 @@ const Projects = () => {
                     
                 </div>
             </div>
-            <img src={bgd} className="wave-projects-bottom" />
-            <img src={illustration} className="illustration" />
+            <img src={bgd} className="wave-projects-bottom" alt="illustration" />
+            <img src={illustration} className="illustration" alt="illustration" />
         </section>
     );
 };

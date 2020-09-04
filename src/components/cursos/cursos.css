@@ -26,11 +26,13 @@
   }
 
 .cursos{
+  margin-top: 12rem;
     position: relative;
     background: url(../../assets/img/space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 .ilustration{
     position: absolute;
@@ -47,11 +49,7 @@
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    position: relative;
-    animation: gravity1 infinite 4s;
-}
-.card-cursos:nth-child(odd){
-    animation: gravity2 infinite 8s;
+    position: relative;   
 }
 
 .card-cursos h4{
