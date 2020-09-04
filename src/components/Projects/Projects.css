@@ -1,3 +1,23 @@
+.projects{
+    position: relative;
+}
+.wave-projects-bottom{
+    position: absolute;
+    transform: rotate(135deg);
+    top: 0rem;
+    left: -20rem;
+    width: 60rem;
+    height: 40rem;
+    z-index: -1;
+}
+.illustration{
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    transform: scaleX(-1)
+}
 .card-container{
     position: relative;
     margin-top: calc(30% - 10rem);

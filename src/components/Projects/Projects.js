@@ -1,6 +1,9 @@
 import React from 'react';
 import './Projects.css'
 
+import bgd from '../../assets/img/wave-bottom.fw.png';
+import illustration from '../../assets/img/il-1.png'
+
 import Cards from './Cards';
 
 
@@ -47,6 +50,8 @@ const Projects = () => {
                     
                 </div>
             </div>
+            <img src={bgd} className="wave-projects-bottom" />
+            <img src={illustration} className="illustration" />
         </section>
     );
 };

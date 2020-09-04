@@ -1,0 +1,70 @@
+@keyframes gravity1 {
+    0% {
+      bottom: 0px;
+    }
+  
+    50% {
+      bottom: 3rem;
+    }
+  
+    100% {
+      bottom: 0px;
+    }
+  }
+  @keyframes gravity2 {
+    0% {
+      bottom: 0px;
+    }
+  
+    50% {
+      bottom: 3rem;
+    }
+  
+    100% {
+      bottom: 0px;
+    }
+  }
+
+.cursos{
+    position: relative;
+    background: url(../../assets/img/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ilustration{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    z-index: -1;
+    width: 10rem;
+}
+
+.card-cursos{
+    width: calc(33.3% - 1rem);
+    background-image: linear-gradient( to bottom right, var(--lila), var(--naranja) );
+    box-shadow: 0 5px 20px rgba(40, 55, 71, .5);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    position: relative;
+    animation: gravity1 infinite 4s;
+}
+.card-cursos:nth-child(odd){
+    animation: gravity2 infinite 8s;
+}
+
+.card-cursos h4{
+    text-align: center;
+}
+.card-cursos p{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: initial;
+}
+.card-cursos i{
+    width: 2rem;
+    color: var(--gris);
+    margin-right: .5rem;
+    font-size: 1.8rem;
+}
