@@ -1,0 +1,50 @@
+footer{
+    width: 100%;
+    min-height: 20rem;
+    background-color: var(--navy);
+    padding: 3rem 0;
+    color: white;
+}
+fieldset{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+legend{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--naranja);
+}
+.div-form{
+    margin-top: 2rem;
+    position: relative;
+}
+
+label{
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+input, textarea{
+    width: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gris);
+    transition: all .3s ease;
+    caret-color: var(--gris);
+}
+input:focus{
+    border-bottom: 1px solid var(--naranja);
+}
+textarea{
+    width: 100%;
+    height: 15rem;
+    border: 1px solid var(--gris);
+    border-radius: 1rem;
+    outline: transparent;
+    padding: 1rem;
+}
+textarea:focus{
+    border: 1px solid var(--naranja);
+}

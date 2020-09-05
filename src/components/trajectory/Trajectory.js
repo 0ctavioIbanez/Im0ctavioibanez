@@ -1,31 +1,63 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './trajectory.css';
 
 import Events from './Events';
+import Pacman from './Pacman';
 
 const Trajectory = () => {
 
     const listaTrayectoria = [
-        {key: 1, anio: 2020, color: '#00CFE0', icon: '<i class="fas fa-user-graduate"></i>', title: 'Fin de la carrera', desc: 'Fecha prevista para la culminación de la carrera.'},
-        {key: 2, anio: 2020, color: '#E05F00', icon: '<i class="fas fa-shopping-cart"></i>', title: 'Ecommerce', desc: 'Tienda en línea desarrollada'},
-        {key: 3, anio: 2020, color: '#00BD09', icon: `<i class="far fa-chart-bar"></i>`, title: 'Administrador de negocio', desc: 'Panel de administración integral del negocio SmartLegs'},
-        {key: 4, anio: 2020, color: '#E2E600', icon: '<i class="fas fa-balance-scale"></i>', title: 'Landing page de abogados', desc: 'Panel de administración integral del negocio SmartLegs'},
-        {key: 5, anio: 2019, color: '#283747', icon: '<i class="fas fa-boxes"></i>', title: 'Control de inventarios', desc: 'Panel de administración integral del negocio SmartLegs'}
+        {key: 20, anio: 2020, color: '#00CFE0', icon: '<i class="fas fa-user-graduate"></i>', title: 'Fin de la carrera', desc: 'Fecha prevista para la culminación de la carrera.'},
+        {key: 19, anio: 2020, color: '#00CFE0', icon: '<i class="fas fa-user-graduate"></i>', title: 'Curso React', desc: 'Redux, Mern, Hooks context'},
+        {key: 18, anio: 2020, color: '#E05F00', icon: '<i class="fas fa-shopping-cart"></i>', title: 'Ecommerce', desc: 'Tienda con encriptación, consumo de API´s, responsiva'},
+        {key: 17, anio: 2020, color: '#00BD09', icon: '<i class="far fa-chart-bar"></i>', title: 'Administrador de negocio', desc: 'Panel de administración integral del negocio SmartLegs'},
+        {key: 16, anio: 2020, color: '#00BD09', icon: '<i class="far fa-chart-bar"></i>', title: 'Curso backend', desc: 'Curso de php, Laravel, Symfony, MVC, MySQL y WordPress'},
+        {key: 15, anio: 2020, color: '#00BD09', icon: '<i class="far fa-chart-bar"></i>', title: 'Curso JavaScript', desc: 'JavaScript moderno, desde EC6 (promesas, fetch, callbacks, etc)'},
+        {key: 14, anio: 2020, color: '#E2E600', icon: '<i class="fas fa-balance-scale"></i>', title: 'Landing page de abogados', desc: 'Landing page de un despacho con integración de PayPal'},
+        {key: 13, anio: 2019, color: '#283747', icon: '<i class="fas fa-boxes"></i>', title: 'Curso de Angular', desc: 'Curso de Angular 7'},
+        {key: 12, anio: 2019, color: '#283747', icon: '<i class="fas fa-boxes"></i>', title: 'Curso de desarrollo web', desc: 'Curso integral de desarrollo (php, JavaScript, CSS, MySQL, etc)'},
+        {key: 11, anio: 2019, color: '#283747', icon: '<i class="fas fa-boxes"></i>', title: 'Control de inventarios', desc: 'Búsqueda dinámica con AJAX. CRUD de productos'},
+        {key: 10, anio: 2019, color: '#283747', icon: '<i class="fas fa-boxes"></i>', title: 'Curso en Accenture', desc: 'Curso de design thinking, administracion del tiempo y elaboración de un proyecto'},
+        {key: 9, anio: 2019, color: 'var(--lila)', icon: '<i class="fas fa-boxes"></i>', title: 'Diseño de un sistema', desc: 'Documentación y elaboración de un sistema según las fases de desarrollo'},
+        {key: 8, anio: 2018, color: 'var(--azul2)', icon: '<i class="fas fa-boxes"></i>', title: 'Proyecto SCRUM', desc: 'Desarrollo de un proyecto en equipo donde se aplicó la metodología SCRUM'},
+        {key: 7, anio: 2017, color: 'var(--naranja)', icon: '<i class="fas fa-boxes"></i>', title: 'Proyecto misíl', desc: 'Simulación del derribamiento de un misíl según la extrapolación de su trayectoria'},
+        {key: 6, anio: 2017, color: 'var(--azul)', icon: '<i class="fas fa-boxes"></i>', title: 'Inicio licenciatura', desc: 'Comienzo de la carrera ingeniería en informática en UPIICSA - IPN'},
+        {key: 5, anio: 2016, color: 'var(--azul)', icon: '<i class="fas fa-boxes"></i>', title: 'Curso Provokadores', desc: 'Curso intersemestral de habilidades blandas y laborales'},
+        {key: 4, anio: 2016, color: 'var(--gris)', icon: '<i class="fas fa-boxes"></i>', title: 'Fin de curso de inglés', desc: 'Culminación del curso de inglés'},
+        {key: 3, anio: 2015, color: 'var(--gris)', icon: '<i class="fas fa-boxes"></i>', title: 'Soporte técnico', desc: 'Soporte técnico en redes, mantenimiento a equipos de cómputo'},
+        {key: 2, anio: 2014, color: 'var(--gris)', icon: '<i class="fas fa-boxes"></i>', title: 'Conclusión del bachillerato', desc: 'Fin del bachillerato en el CECyT 14 como técnico en informática'},
+        {key: 1, anio: 2014, color: 'var(--gris)', icon: '<i class="fas fa-boxes"></i>', title: 'Inicio de clases de inglés', desc: 'Curso de inglés en el CELEX 14'},
     ];
+
+    let status = 1500;
+
+    const handleEnter = () => {
+        status = 800;
+        console.log(status);
+    }
+    const handLeave = () => {
+        status = 1500;
+        console.log(status);
+    }
 
     return (
         <section className="trajectory">
             <div className="container">
-                <h2 className="titulo">Trayectoria</h2>
-                <div className="timeline flex">
+                <h2 className="titulo">Trarelativeyectoria</h2>
+                <Pacman 
+                    status={status}
+                />
+                <div className="scroll-container" onMouseOver={handleEnter} onMouseLeave={handLeave}>
+                    <div className="timeline flex">
 
-                    {listaTrayectoria.map( evento => (
-                        <Events 
-                            key={evento.key}
-                            evento={evento}
-                        />
-                    ))}
+                        {listaTrayectoria.map( evento => (
+                            <Events 
+                                key={evento.key}
+                                evento={evento}
+                            />
+                        ))}
 
+                    </div>
                 </div>
             </div>
         </section>

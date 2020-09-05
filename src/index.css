@@ -126,3 +126,30 @@ h1,h2,h3{
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(230, 153, 46, .4);
 }
+
+
+/*
+Tools
+*/
+/* width */
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--navy);
+  border-radius: 10rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E05F00;
+  border-radius: 10rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--naranja);
+}

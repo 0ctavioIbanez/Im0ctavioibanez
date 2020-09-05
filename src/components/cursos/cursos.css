@@ -11,22 +11,9 @@
       bottom: 0px;
     }
   }
-  @keyframes gravity2 {
-    0% {
-      bottom: 0px;
-    }
-  
-    50% {
-      bottom: 3rem;
-    }
-  
-    100% {
-      bottom: 0px;
-    }
-  }
 
 .cursos{
-  margin-top: 12rem;
+    margin-top: 12rem;
     position: relative;
     background: url(../../assets/img/space.jpg);
     background-repeat: no-repeat;
@@ -34,6 +21,7 @@
     background-position: center center;
     background-attachment: fixed;
 }
+
 .ilustration{
     position: absolute;
     top: 10rem;
@@ -49,7 +37,14 @@
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    position: relative;   
+    position: relative;
+    margin-bottom: 3rem;   
+    transition: all .3s ease;
+    z-index: 5;
+}
+.card-cursos:hover{
+  cursor: pointer;
+  animation: none!important;
 }
 
 .card-cursos h4{
@@ -65,4 +60,11 @@
     color: var(--gris);
     margin-right: .5rem;
     font-size: 1.8rem;
+}
+.test{
+  width: 10rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3rem;
+  z-index: 2;
 }

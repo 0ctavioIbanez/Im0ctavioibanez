@@ -6,11 +6,14 @@ const Events = ({evento}) => {
         <div className="timeline-event" style={{border: '5px solid ' + evento.color, boxShadow: '2px 2px 10px '+evento.color+'80'}}>
             <p className="text-center" style={{color: evento.color}}>{evento.anio}</p>
             
-            <div 
-                className="timeline-icon" 
-                style={evento.key%2===1?{backgroundColor: evento.color}:{backgroundColor: evento.color, top: '10rem'}}
-                dangerouslySetInnerHTML={{__html: evento.icon}}
-            ></div>
+            <div className="relative">
+                <div 
+                    className="timeline-icon" 
+                    style={evento.key%2===1?{backgroundColor: evento.color}:{backgroundColor: evento.color, top: '10rem'}}
+                    dangerouslySetInnerHTML={{__html: evento.icon}}
+                ></div>
+                <span className="indicador" style={evento.key%2===0?{transform: 'rotate(180deg)', top: '8.5rem', borderTop: '1rem solid '+evento.color}:{borderTop: '1rem solid '+evento.color}}></span>
+            </div>
             
             
             <div 

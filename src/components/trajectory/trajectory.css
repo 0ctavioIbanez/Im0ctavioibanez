@@ -1,7 +1,21 @@
-.timeline{
-    justify-content: center;
-    flex-direction: row-reverse;
+.trajectory .container{
+    position: relative;
 }
+
+.scroll-container{
+    position: relative;
+    width: 100%;
+    min-height: 50rem;
+    overflow-x: scroll;
+    padding: 0 3rem;
+}
+.timeline{
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+}
+
 .timeline-event{
     width: 6rem;
     height: 6rem;
@@ -11,14 +25,17 @@
     margin-right: 5.5rem;
     margin-top: 16rem;
 }
+
+
 .timeline-event > span{
     position: absolute;
     width: 6rem;
     height: .5rem;
     background-color: blue;
-    left: -6rem;
+    right: -6rem;
     top: calc(50% - .25rem);
 }
+
 .timeline-icon{
     width: 8rem;
     height: 8rem;
@@ -31,6 +48,14 @@
     font-size: 4rem;
     padding-top: calc(100% - 3rem);
 }
+.indicador{
+    position: absolute;
+    top: -5.5rem;
+    left: calc(50% - 1rem);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; 
+}
+
 .timeline-icon > span{
     width: 3rem;
     height: 3rem;
@@ -47,3 +72,64 @@
     font-size: 1.2rem;
     color: #5F6A6A;
 }
+
+
+.pacman{
+    position: absolute;
+    left: -5rem;
+    top: calc(50% - 7rem);
+}
+  
+.pacman-top{
+    background-color:yellow;
+    height: 5rem;
+    width: 10rem;
+    border-radius:100px 100px 0 0;
+    animation: spin1 0.5s infinite linear;
+}
+  
+.pacman-bottom{
+    background-color:yellow;
+    height: 5rem;
+    width: 10rem;
+    border-radius:0 0 100px 100px;
+    animation: spin2 0.5s infinite linear;
+}
+  
+
+  
+  /* Animation*/
+  
+  @keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+  }
+  @keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+  }
+  
+  @-moz-keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+  }
+  @-moz-keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+  }
+  
+  @-webkit-keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+  }
+  @-webkit-keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+  }
+  
+
+  
+

@@ -3,20 +3,22 @@ import './cursos.css';
 
 import Curso from './Curso';
 
+import Satellite from './Satellite';
+
 const Cursos = () => {
 
     const cursos = [
         {title: 'JavaScript', desc: "JavaScript moderno, asicronía, consumo de API's", sitio: 'Udemy', status: 'Concluido'},
-        {title: 'Backend', desc: "Curso de PHP, Laravel, Symfony, MVC, MySQL", sitio: 'Udemy', status: 'Concluido'},
+        {title: 'Desarrollo web completo', desc: "Curso de PHP, Laravel, Symfony, MVC, MySQL", sitio: 'Udemy', status: 'Concluido'},
         {title: 'Backend', desc: "Curso de PHP, Laravel, Symfony, MVC, MySQL", sitio: 'Udemy', status: 'Concluido'},
         {title: 'Backend', desc: "Curso de PHP, Laravel, Symfony, MVC, MySQL", sitio: 'Udemy', status: 'Concluido'},
         {title: 'Backend', desc: "Curso de PHP, Laravel, Symfony, MVC, MySQL", sitio: 'Udemy', status: 'Concluido'},
     ]
 
     return (
-        <section className="cursos">
+        <section className="cursos" id="cursos">
             <div className="container">
-                <h1 className="titulo white">Mis cursos</h1>
+                <h1 className="titulo white">Cursos que he tomado</h1>
                 <div className="cursos-container flex">
                     {cursos.map(curso => (
                         <Curso 
@@ -26,6 +28,7 @@ const Cursos = () => {
                     ))}
                 </div>
             </div>
+            <Satellite />
         </section>
     );
 };
