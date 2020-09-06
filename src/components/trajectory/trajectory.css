@@ -1,3 +1,41 @@
+  /* Animation*/
+  
+  @keyframes spin1 {
+    0%  {transform: rotate(0deg);}
+    50%{transform: rotate(-35deg);}
+  
+}
+@keyframes spin2 {
+    0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-moz-keyframes spin1 {
+    0%  {transform: rotate(0deg);}
+    50%{transform: rotate(-35deg);}
+  
+}
+@-moz-keyframes spin2 {
+    0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-webkit-keyframes spin1 {
+    0%  {transform: rotate(0deg);}
+    50%{transform: rotate(-35deg);}
+  
+}
+@-webkit-keyframes spin2 {
+    0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+
+.trajectory{
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, var(--lila), var(--azul2), var(--azul));
+}
 .trajectory .container{
     position: relative;
 }
@@ -5,9 +43,14 @@
 .scroll-container{
     position: relative;
     width: 100%;
-    min-height: 50rem;
+    height: 50rem;
     overflow-x: scroll;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: inset 0 0 5px var(--navy);
+    border: 5px solid var(--navy);
+    border-bottom: 2rem solid var(--navy);
 }
 .timeline{
     flex-wrap: nowrap;
@@ -77,15 +120,16 @@
 .pacman{
     position: absolute;
     left: -5rem;
-    top: calc(50% - 7rem);
+    top: 25rem;
+    z-index: 2;
 }
   
 .pacman-top{
     background-color:yellow;
     height: 5rem;
     width: 10rem;
-    border-radius:100px 100px 0 0;
-    animation: spin1 0.5s infinite linear;
+    border-radius: 100px 100px 0 0;
+    
 }
   
 .pacman-bottom{
@@ -93,43 +137,46 @@
     height: 5rem;
     width: 10rem;
     border-radius:0 0 100px 100px;
-    animation: spin2 0.5s infinite linear;
+    
 }
   
+  .code-il{
+      position: absolute;
+      bottom: -6rem;
+      right: -6rem;
+      width: 12rem;
+  }
 
-  
-  /* Animation*/
-  
-  @keyframes spin1 {
-      0%  {transform: rotate(0deg);}
-      50%{transform: rotate(-35deg);}
-    
-  }
-  @keyframes spin2 {
-      0%  {transform: rotate(0deg);}
-    50%{transform: rotate(35deg);}	
-  }
-  
-  @-moz-keyframes spin1 {
-      0%  {transform: rotate(0deg);}
-      50%{transform: rotate(-35deg);}
-    
-  }
-  @-moz-keyframes spin2 {
-      0%  {transform: rotate(0deg);}
-    50%{transform: rotate(35deg);}	
-  }
-  
-  @-webkit-keyframes spin1 {
-      0%  {transform: rotate(0deg);}
-      50%{transform: rotate(-35deg);}
-    
-  }
-  @-webkit-keyframes spin2 {
-      0%  {transform: rotate(0deg);}
-    50%{transform: rotate(35deg);}	
-  }
-  
 
-  
+.circle{
+    border-radius: 50%;
+    margin: 0 auto;
+}
 
+.circle-1{
+    width: 30rem;
+    height: 30rem;
+    padding-top: 5rem;
+    position: absolute;
+    right: -10rem;
+    top: -15rem;
+    background-color: rgba(245, 148, 0, .5);
+}
+.circle-2{
+    width: 20rem;
+    height: 20rem;
+    padding-top: 5rem;
+    background-color: rgba(245, 148, 0, .7);
+}
+.circle-3{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(245, 148, 0, .9);
+}
+.keyboard-container{
+    width: 100%;
+}
+.keyboard{
+    width: 50rem;
+    margin: 0 auto;
+}

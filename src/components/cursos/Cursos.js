@@ -18,7 +18,7 @@ const Cursos = () => {
     return (
         <section className="cursos" id="cursos">
             <div className="container">
-                <h1 className="titulo white">Cursos que he tomado</h1>
+                <h1 className="titulo white">Cursos tomados</h1>
                 <div className="cursos-container flex">
                     {cursos.map(curso => (
                         <Curso 

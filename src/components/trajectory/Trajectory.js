@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import './trajectory.css';
 
+import keyboard from '../../assets/img/keyboard.png';
+import il from '../../assets/img/code.fw.png'
+
 import Events from './Events';
 import Pacman from './Pacman';
 
@@ -29,25 +32,29 @@ const Trajectory = () => {
         {key: 1, anio: 2014, color: 'var(--gris)', icon: '<i class="fas fa-boxes"></i>', title: 'Inicio de clases de inglés', desc: 'Curso de inglés en el CELEX 14'},
     ];
 
-    let status = 1500;
+const [enter, setEnter] = useState(false);
 
-    const handleEnter = () => {
-        status = 800;
-        console.log(status);
-    }
-    const handLeave = () => {
-        status = 1500;
-        console.log(status);
-    }
+const handleEnter = () =>{
+    setEnter(true);
+}
+const handleLeave = () => {
+    setEnter(false);
+}
 
     return (
         <section className="trajectory">
+            <div className="circle circle-1">
+                <div className="circle circle-2">
+                    <div className="circle circle-3"></div>
+                </div>
+            </div>
             <div className="container">
-                <h2 className="titulo">Trarelativeyectoria</h2>
+            <img className="code-il" src={il} alt="ilutracion" />
+                <h2 className="titulo white">Trayectoria</h2>
                 <Pacman 
-                    status={status}
+                    enter={enter}
                 />
-                <div className="scroll-container" onMouseOver={handleEnter} onMouseLeave={handLeave}>
+                <div className="scroll-container" onMouseOver={handleEnter} onMouseLeave={handleLeave}>
                     <div className="timeline flex">
 
                         {listaTrayectoria.map( evento => (
@@ -56,8 +63,10 @@ const Trajectory = () => {
                                 evento={evento}
                             />
                         ))}
-
                     </div>
+                </div>
+                <div className="keyboard-container flex">
+                    <img src={keyboard} className="keyboard" alt="keyboard" />
                 </div>
             </div>
         </section>
