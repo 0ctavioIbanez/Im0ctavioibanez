@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/0ctavioIbanez/im0ctavioibanez/static/css/main.b6dbd120.chunk.css",
-    "main.js": "/0ctavioIbanez/im0ctavioibanez/static/js/main.89a9e096.chunk.js",
-    "main.js.map": "/0ctavioIbanez/im0ctavioibanez/static/js/main.89a9e096.chunk.js.map",
+    "main.css": "/0ctavioIbanez/im0ctavioibanez/static/css/main.73ccf625.chunk.css",
+    "main.js": "/0ctavioIbanez/im0ctavioibanez/static/js/main.624b697c.chunk.js",
+    "main.js.map": "/0ctavioIbanez/im0ctavioibanez/static/js/main.624b697c.chunk.js.map",
     "runtime-main.js": "/0ctavioIbanez/im0ctavioibanez/static/js/runtime-main.e0c1f609.js",
     "runtime-main.js.map": "/0ctavioIbanez/im0ctavioibanez/static/js/runtime-main.e0c1f609.js.map",
-    "static/js/2.f296a81d.chunk.js": "/0ctavioIbanez/im0ctavioibanez/static/js/2.f296a81d.chunk.js",
-    "static/js/2.f296a81d.chunk.js.map": "/0ctavioIbanez/im0ctavioibanez/static/js/2.f296a81d.chunk.js.map",
+    "static/js/2.a0a0000a.chunk.js": "/0ctavioIbanez/im0ctavioibanez/static/js/2.a0a0000a.chunk.js",
+    "static/js/2.a0a0000a.chunk.js.map": "/0ctavioIbanez/im0ctavioibanez/static/js/2.a0a0000a.chunk.js.map",
     "index.html": "/0ctavioIbanez/im0ctavioibanez/index.html",
-    "precache-manifest.5679df20bdc78101d07d6c4c12d6cd2a.js": "/0ctavioIbanez/im0ctavioibanez/precache-manifest.5679df20bdc78101d07d6c4c12d6cd2a.js",
+    "precache-manifest.2e4f4d76291c19e57bb71d21d32f717d.js": "/0ctavioIbanez/im0ctavioibanez/precache-manifest.2e4f4d76291c19e57bb71d21d32f717d.js",
     "service-worker.js": "/0ctavioIbanez/im0ctavioibanez/service-worker.js",
-    "static/css/main.b6dbd120.chunk.css.map": "/0ctavioIbanez/im0ctavioibanez/static/css/main.b6dbd120.chunk.css.map",
-    "static/js/2.f296a81d.chunk.js.LICENSE.txt": "/0ctavioIbanez/im0ctavioibanez/static/js/2.f296a81d.chunk.js.LICENSE.txt",
+    "static/css/main.73ccf625.chunk.css.map": "/0ctavioIbanez/im0ctavioibanez/static/css/main.73ccf625.chunk.css.map",
+    "static/js/2.a0a0000a.chunk.js.LICENSE.txt": "/0ctavioIbanez/im0ctavioibanez/static/js/2.a0a0000a.chunk.js.LICENSE.txt",
     "static/media/atomic-1.png": "/0ctavioIbanez/im0ctavioibanez/static/media/atomic-1.0cdecfe7.png",
     "static/media/Cover.css": "/0ctavioIbanez/im0ctavioibanez/static/media/bgd-cover.731618ce.jpeg",
     "static/media/technologies.css": "/0ctavioIbanez/im0ctavioibanez/static/media/code-bgd.0cd146e8.jpg",
     "static/media/code.fw.png": "/0ctavioIbanez/im0ctavioibanez/static/media/code.fw.460f40bd.png",
-    "static/media/cometa.png": "/0ctavioIbanez/im0ctavioibanez/static/media/cometa.18f55a08.png",
-    "static/media/ecommerce-1.png": "/0ctavioIbanez/im0ctavioibanez/static/media/ecommerce-1.02d7c061.png",
+    "static/media/ecommerce-1.png": "/0ctavioIbanez/im0ctavioibanez/static/media/ecommerce-1.c8f38f8f.png",
     "static/media/footer.css": "/0ctavioIbanez/im0ctavioibanez/static/media/footer-bg.545e635d.jpg",
     "static/media/il-1.png": "/0ctavioIbanez/im0ctavioibanez/static/media/il-1.0f971ffe.png",
     "static/media/inventario-1.png": "/0ctavioIbanez/im0ctavioibanez/static/media/inventario-1.905deb28.png",
@@ -30,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e0c1f609.js",
-    "static/js/2.f296a81d.chunk.js",
-    "static/css/main.b6dbd120.chunk.css",
-    "static/js/main.89a9e096.chunk.js"
+    "static/js/2.a0a0000a.chunk.js",
+    "static/css/main.73ccf625.chunk.css",
+    "static/js/main.624b697c.chunk.js"
   ]
 }
