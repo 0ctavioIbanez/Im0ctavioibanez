@@ -1,5 +1,6 @@
 .projects{
     position: relative;
+    overflow: hidden visible;
 }
 .wave-projects-bottom{
     position: absolute;
@@ -20,7 +21,7 @@
 }
 .card-container{
     position: relative;
-    margin-top: calc(30% - 10rem);
+    margin-top: 40vh;
 }
 .project-desc{
     padding: 1rem;
@@ -35,4 +36,16 @@
 }
 .project-desc .btn-secundary{
     color: white;
+}
+
+.project-card{
+  width: 20rem;
+}
+@media only screen and (min-width: 76.8rem){
+  .card-container{
+      margin-top: calc(30% - 10rem);
+  }
+   .project-card{
+     width: 55rem;
+    }
 }

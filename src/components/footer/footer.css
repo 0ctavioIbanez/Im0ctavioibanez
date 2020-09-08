@@ -21,7 +21,7 @@ footer .container::before{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);   
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer h2 i{
@@ -29,13 +29,15 @@ footer h2 i{
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.div1-footer{
+  margin: 3rem;
+}
 form{
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 1rem;
-    width: 50%;
+    width: 100%;
     color: var(--gris);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -81,4 +83,12 @@ textarea:focus{
     flex-grow: 1;
     position: relative;
     z-index: 1;
+}
+@media only screen and (min-width: 76.8rem){
+  .div1-footer{
+    margin: 0 auto;
+  }
+   form{
+     width: 50%
+    }
 }

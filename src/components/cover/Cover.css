@@ -22,17 +22,27 @@
     z-index: 0;
 }
 .parallax .titulo{
-    color: white
+    color: white;
 }
 .cover-text{
     margin-top: 12rem;
+    position: relative;
+    z-index: 1
 }
 h3.text-center{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .big-text{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 .web-text{
-    color: var(--naranja);
+    border-bottom: 2px solid var(--azul);
+}
+@media only screen and (min-width: 76.8rem){
+  .big-text{
+      font-size: 4.5rem;
+  }
+  h3.text-center{
+      font-size: 3rem;
+  }
 }

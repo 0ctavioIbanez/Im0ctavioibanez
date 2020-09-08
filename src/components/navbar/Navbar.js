@@ -15,8 +15,13 @@ const Navbar = (props) => {
             keyLeft.style.width = "10rem";
 
             keyRight.style.transition = "all .3s ease";
-            keyRight.style.width = "10rem"
-          }, 1000);
+            keyRight.style.width = "10rem";
+
+            setTimeout( () => {
+              keyLeft.style.opacity = "0%";
+              keyRight.style.opacity = "0%";
+            }, 300);
+          }, 1000);            
     }, []);
 
 
@@ -33,10 +38,10 @@ const Navbar = (props) => {
 
                 
                 <div className="keys" id="key-left">
-                {key1}
+                  {key1}
                 </div>
                 <div className="keys" id="key-right">
-                {key2}
+                  {key2}
                 </div>
             </div>
         </div>

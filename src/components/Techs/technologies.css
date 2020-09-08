@@ -72,18 +72,28 @@
     border-radius: 1rem;
     padding: 1rem;
     color: white;
-    width: 25rem;
+    width: calc(50% - .5rem);
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: all .6s ease;
 }
-.tech-card:hover{
-    cursor: pointer;
-    transform: scale(1.4);
-}
 .tech-icon{
-    font-size: 3rem;
+    font-size: 2rem;
 }
+@media only screen and (min-width: 64rem){
+   .tech-card{
+     width: 25rem;
+     font-size: 2rem;
+    }
+    .tech-card:hover{
+        cursor: pointer;
+        transform: scale(1.4);
+    }
+    .tech-icon{
+        font-size: 3rem;
+    }
+}
+
 .lang-tools > .tech-card{
     background-image: linear-gradient(to top right, var(--azul), var(--navy));
 }

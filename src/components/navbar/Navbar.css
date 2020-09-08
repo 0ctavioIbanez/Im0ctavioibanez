@@ -1,72 +1,86 @@
 /* ===============================================================================
     Barra
  =============================================================================== */
- .barra{
-    width: 100%;
+.barra {
+  width: 100%;
+  height: 50vh;
+  padding-top: 2rem;
+  background-color: var(--navy);
+  position: relative;
+  z-index: 5;
+}
+
+.barra>.container {
+  position: relative;
+}
+
+.profile {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: calc(50% - 7.5rem);
+  top: calc(50vh - 9rem);
+  box-shadow: 2px 2px 10px rgb(48, 48, 48);
+}
+@media only screen and (min-width: 76.8rem){
+  .profile {
+    top: 15rem;
+  }
+}
+
+.cover-title {
+  color: white;
+  text-align: center;
+}
+
+.cover-title>h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.cover-title>h3 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.azul {
+  color: var(--gris);
+}
+
+.keys {
+  background-color: var(--navy);
+  color: white;
+  position: absolute;
+  top: -3.5rem;
+  font-size: 14rem;
+  width: 50%;
+}
+
+#key-left {
+  left: calc(50% - 6rem);
+  left: 0;
+  text-align: right;
+}
+
+#key-right {
+  right: 0;
+}
+
+@media only screen and (min-width: 76.8rem) {
+  .barra {
     height: 20rem;
-    padding-top: 2rem;
-    background-color: var(--navy);
-    position: relative;
-    z-index: 5;
-   }
-   .barra > .container{
-     position: relative;
-   }
-   .profile{
-     width: 15rem;
-     height: 15rem;
-     border-radius: 50%;
-     overflow: hidden;
-     position: absolute;
-     left: calc(50% - 7.5rem);
-     top: 15rem;
-     box-shadow: 2px 2px 10px rgb(48, 48, 48);
-   }
-  .cover-title{
-    color: white;
-    text-align: center;
   }
-  
-  
-  .title {
-      font-family: "Montserrat";
-      text-align: center;
-      color: #FFF;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      letter-spacing: 1px;
+
+  .cover-title>h1 {
+    font-size: 9rem;
+    line-height: .75;
   }
-  
-  .cover-title > h1 {
-      font-size: 9rem;
-      line-height: .75;
-    margin: 0;
-  }
-  .cover-title > h3 {
+
+  .cover-title>h3 {
     font-size: 4rem;
     margin-top: 2rem;
   }
-  .azul{
-    color: var(--gris);
-  }
-  
-  
-  .keys{
-    background-color: var(--navy);
-    color: white;
-    position: absolute;
-    top: -3.5rem;
-    font-size: 14rem;
-    width: 50%;
-  }
-  #key-left{
-    left: calc(50% - 6rem);
-    left: 0;
-    text-align: right;
-  }
-  #key-right{
-    right: 0;
-  }
+}

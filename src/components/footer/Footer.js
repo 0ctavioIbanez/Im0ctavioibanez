@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer>
             <div className="container flex">
-                <div className="test-footer">
-                    <h2 className="titulo white"><i class="fas fa-mug-hot"></i> Charlemos</h2>
+                <div className="div1-footer">
+                    <h2 className="titulo white"><i className="fas fa-mug-hot"></i> Charlemos</h2>
                 </div>
                 <form>
                     <div className="div-form">

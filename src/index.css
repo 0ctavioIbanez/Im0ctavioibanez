@@ -49,8 +49,7 @@ h1,h2,h3{
   color: white!important;
 }
 .container{
-  max-width: 120rem;
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 .flex{
@@ -63,7 +62,7 @@ h1,h2,h3{
 .titulo{
   text-align: center;
   color: var(--azul);
-  font-size: 4.5rem;
+  font-size: 4rem;
   position: relative;
 }
 .titulo::after{
@@ -74,6 +73,15 @@ h1,h2,h3{
   position: absolute;
   top: 7rem;
   left: calc(50% - 15rem);
+}
+@media only screen and (min-width: 76.8rem){
+  .container{
+    max-width: 120rem;
+    padding: 0 3rem;
+  }
+   .titulo{
+      font-size: 4.5rem;
+    }
 }
 
 .text-center{

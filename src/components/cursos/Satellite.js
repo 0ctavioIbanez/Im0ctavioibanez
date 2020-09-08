@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import img from '../../assets/img/satellite.png'
 
-import cometa from '../../assets/img/cometa.png'
-
 import Plx from 'react-plx';
 
 // An array of parallax effects to be applied - see below for detail
@@ -35,28 +33,6 @@ const parallaxData = [
     ]
   },
 ];
-
-//setInterval(animateCometa, 6000);
-
-function animateCometa(){
-  let rnd = Math.ceil( Math.random()*100 );
-  let section = document.querySelector('.cursos');
-
-  console.log(rnd);
-
-  if (rnd <= 25) {
-    console.log("arriba l-r");
-  }
-  else if (rnd <= 50) {
-    console.log("abajo l-r");
-  }
-  else if (rnd <= 75) {
-    console.log("abajo r-l");
-  }
-  else {
-    console.log("enmedio");
-  }
-}
 
 document.addEventListener('DOMContentLoaded', ()=>{
   const cursos = document.querySelector('.cursos');

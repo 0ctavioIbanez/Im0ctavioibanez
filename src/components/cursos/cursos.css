@@ -2,11 +2,11 @@
     0% {
       bottom: 0px;
     }
-  
+
     50% {
       bottom: 3rem;
     }
-  
+
     100% {
       bottom: 0px;
     }
@@ -18,7 +18,7 @@
     background: url(../../assets/img/space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center left;
     background-attachment: fixed;
 }
 
@@ -31,17 +31,26 @@
 }
 
 .card-cursos{
-    width: calc(33.3% - 1rem);
+    width: calc(50% - .5rem);
     background-image: linear-gradient( to bottom right, var(--lila), var(--naranja) );
     box-shadow: 0 5px 20px rgba(40, 55, 71, .5);
     padding: 1rem;
     border-radius: 1rem;
     color: white;
     position: relative;
-    margin-bottom: 3rem;   
+    margin-bottom: 3rem;
     transition: all .3s ease;
     z-index: 5;
 }
+@media only screen and (min-width: 76.8rem){
+   .card-cursos{
+       width: calc(33.3% - 1rem);
+    }
+    .cursos{
+      background-position: center center;
+    }
+}
+
 .card-cursos:hover{
   cursor: pointer;
   animation: none!important;

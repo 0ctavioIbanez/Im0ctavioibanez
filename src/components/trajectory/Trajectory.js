@@ -51,14 +51,14 @@ const handleLeave = () => {
             <div className="container">
             <img className="code-il" src={il} alt="ilutracion" />
                 <h2 className="titulo white">Trayectoria</h2>
-                <Pacman 
+                <Pacman
                     enter={enter}
                 />
                 <div className="scroll-container" onMouseOver={handleEnter} onMouseLeave={handleLeave}>
                     <div className="timeline flex">
 
                         {listaTrayectoria.map( evento => (
-                            <Events 
+                            <Events
                                 key={evento.key}
                                 evento={evento}
                             />

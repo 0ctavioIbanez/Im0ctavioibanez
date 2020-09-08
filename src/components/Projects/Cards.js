@@ -12,7 +12,6 @@ const Cards = ({listProjects}) => {
     }
 
     const style = {
-        width: '55rem',
         textAlign: 'center',
         background: 'var(--navy)',
         color: 'white',
@@ -26,7 +25,7 @@ const Cards = ({listProjects}) => {
       return (
         <ReactCardCarousel autoplay={ true } autoplay_speed={ pause ? 3000 : 15000 } spread="wide">
             {listProjects.map( project => (
-                <div style={ style } key={Math.random()} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+                <div className="project-card" style={ style } key={Math.random()} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
                     <div className="project-image">
                         <img src={project.thumb} alt={project.name+"_img"} />
                     </div>

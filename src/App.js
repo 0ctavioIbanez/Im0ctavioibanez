@@ -17,11 +17,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Cover />
-
-
-      
-
-
       <Projects />
       <Cursos />
       <Techs />

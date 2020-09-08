@@ -1,33 +1,33 @@
   /* Animation*/
-  
+
   @keyframes spin1 {
     0%  {transform: rotate(0deg);}
     50%{transform: rotate(-35deg);}
-  
+
 }
 @keyframes spin2 {
     0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
+  50%{transform: rotate(35deg);}
 }
 
 @-moz-keyframes spin1 {
     0%  {transform: rotate(0deg);}
     50%{transform: rotate(-35deg);}
-  
+
 }
 @-moz-keyframes spin2 {
     0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
+  50%{transform: rotate(35deg);}
 }
 
 @-webkit-keyframes spin1 {
     0%  {transform: rotate(0deg);}
     50%{transform: rotate(-35deg);}
-  
+
 }
 @-webkit-keyframes spin2 {
     0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
+  50%{transform: rotate(35deg);}
 }
 
 
@@ -43,7 +43,7 @@
 .scroll-container{
     position: relative;
     width: 100%;
-    height: 50rem;
+    height: 42rem;
     overflow-x: scroll;
     padding: 2rem 3rem;
     border-radius: 1rem;
@@ -60,13 +60,13 @@
 }
 
 .timeline-event{
-    width: 6rem;
-    height: 6rem;
-    border: 5px solid red;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     position: relative;
     margin-right: 5.5rem;
-    margin-top: 16rem;
+    margin-top: 14rem;
+    font-size: 1rem;
 }
 
 
@@ -74,41 +74,41 @@
     position: absolute;
     width: 6rem;
     height: .5rem;
-    background-color: blue;
     right: -6rem;
     top: calc(50% - .25rem);
 }
 
 .timeline-icon{
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     position: absolute;
-    top: -14rem;
+    top: -12rem;
     left: -1.5rem;
     border-radius: 50%;
     color: white;
     text-align: center;
-    font-size: 4rem;
-    padding-top: calc(100% - 3rem);
+    font-size: 3rem;
+    padding-top: calc( 1.5rem);
 }
+
 .indicador{
     position: absolute;
     top: -5.5rem;
     left: calc(50% - 1rem);
     border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent; 
+    border-right: 1rem solid transparent;
 }
+
 
 .timeline-icon > span{
     width: 3rem;
     height: 3rem;
-    background-color: red;
     position: absolute;
     bottom: -1.5rem;
 }
 .timeline-desc{
     position: absolute;
-    top: 10rem;
+    top: 6rem;
     left: -3rem;
     width: 10rem;
     padding: 1rem;
@@ -116,30 +116,29 @@
     color: #5F6A6A;
 }
 
-
 .pacman{
     position: absolute;
     left: -5rem;
-    top: 25rem;
+    top: 21rem;
     z-index: 2;
 }
-  
+
 .pacman-top{
     background-color:yellow;
     height: 5rem;
     width: 10rem;
     border-radius: 100px 100px 0 0;
-    
+
 }
-  
+
 .pacman-bottom{
     background-color:yellow;
     height: 5rem;
     width: 10rem;
     border-radius:0 0 100px 100px;
-    
+
 }
-  
+
   .code-il{
       position: absolute;
       bottom: -6rem;
@@ -177,6 +176,45 @@
     width: 100%;
 }
 .keyboard{
-    width: 50%;
-    margin: 0 auto;
+    display: none;
+}
+
+
+@media only screen and (min-width: 76.8rem){
+  .scroll-container{
+      height: 50rem;
+    }
+   .timeline-event{
+     width: 6rem;
+     height: 6rem;
+     font-size: 1.6rem;
+     margin-top: 16rem;
+    }
+    .timeline-icon{
+        width: 8rem;
+        height: 8rem;
+        top: -14rem;
+        left: -1.5rem;
+        font-size: 4rem;
+        padding-top: calc(100% - 3rem);
+    }
+    .indicador{
+        top: -5.5rem;
+        left: calc(50% - 1rem);
+    }
+    .timeline-desc{
+        top: 10rem;
+        left: -3rem;
+        font-size: 1.2rem;
+    }
+    .keyboard{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .pacman{
+        position: absolute;
+        left: -5rem;
+        top: 25rem;
+        z-index: 2;
+    }
 }

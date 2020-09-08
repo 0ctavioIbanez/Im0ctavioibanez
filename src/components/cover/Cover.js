@@ -1,10 +1,10 @@
 import React from 'react';
 import './Cover.css';
 
-function Cover(props) {
+function Cover() {
     return (
         <div className="parallax">
-            <div className="container cover-text animate__animated animate__fadeInUp">
+            <div className="container cover-text">
                 <h2 className="titulo">Acerca de mí</h2>
                 <h3 className="text-center">
                     <span className="big-text">¡Hola!</span>  mi nombre es Octavio Ibáñez, soy estudiante de ingeniería en informática
