@@ -180,7 +180,7 @@
 }
 
 
-@media only screen and (min-width: 76.8rem){
+@media only screen and (min-width: 64rem){
   .scroll-container{
       height: 50rem;
     }

@@ -38,7 +38,7 @@ h3.text-center{
 .web-text{
     border-bottom: 2px solid var(--azul);
 }
-@media only screen and (min-width: 76.8rem){
+@media only screen and (min-width: 64rem){
   .big-text{
       font-size: 4.5rem;
   }

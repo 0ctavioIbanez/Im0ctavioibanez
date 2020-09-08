@@ -84,7 +84,7 @@ textarea:focus{
     position: relative;
     z-index: 1;
 }
-@media only screen and (min-width: 76.8rem){
+@media only screen and (min-width: 64rem){
   .div1-footer{
     margin: 0 auto;
   }
