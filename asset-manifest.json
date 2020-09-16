@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/im0ctavioibanez/static/css/main.cb3f0e32.chunk.css",
-    "main.js": "/im0ctavioibanez/static/js/main.2bfbf04c.chunk.js",
-    "main.js.map": "/im0ctavioibanez/static/js/main.2bfbf04c.chunk.js.map",
+    "main.css": "/im0ctavioibanez/static/css/main.d083b343.chunk.css",
+    "main.js": "/im0ctavioibanez/static/js/main.b5991914.chunk.js",
+    "main.js.map": "/im0ctavioibanez/static/js/main.b5991914.chunk.js.map",
     "runtime-main.js": "/im0ctavioibanez/static/js/runtime-main.ee5fc235.js",
     "runtime-main.js.map": "/im0ctavioibanez/static/js/runtime-main.ee5fc235.js.map",
-    "static/js/2.bc7d61a8.chunk.js": "/im0ctavioibanez/static/js/2.bc7d61a8.chunk.js",
-    "static/js/2.bc7d61a8.chunk.js.map": "/im0ctavioibanez/static/js/2.bc7d61a8.chunk.js.map",
+    "static/js/2.c17d90ab.chunk.js": "/im0ctavioibanez/static/js/2.c17d90ab.chunk.js",
+    "static/js/2.c17d90ab.chunk.js.map": "/im0ctavioibanez/static/js/2.c17d90ab.chunk.js.map",
     "index.html": "/im0ctavioibanez/index.html",
-    "precache-manifest.0ea1caae10c3c24508c72fe6d4f0e756.js": "/im0ctavioibanez/precache-manifest.0ea1caae10c3c24508c72fe6d4f0e756.js",
+    "precache-manifest.eb8214254965fe2717ef3bcc13b74c87.js": "/im0ctavioibanez/precache-manifest.eb8214254965fe2717ef3bcc13b74c87.js",
     "service-worker.js": "/im0ctavioibanez/service-worker.js",
-    "static/css/main.cb3f0e32.chunk.css.map": "/im0ctavioibanez/static/css/main.cb3f0e32.chunk.css.map",
-    "static/js/2.bc7d61a8.chunk.js.LICENSE.txt": "/im0ctavioibanez/static/js/2.bc7d61a8.chunk.js.LICENSE.txt",
+    "static/css/main.d083b343.chunk.css.map": "/im0ctavioibanez/static/css/main.d083b343.chunk.css.map",
+    "static/js/2.c17d90ab.chunk.js.LICENSE.txt": "/im0ctavioibanez/static/js/2.c17d90ab.chunk.js.LICENSE.txt",
+    "static/media/abastct.png": "/im0ctavioibanez/static/media/abastct.b4c73862.png",
     "static/media/about.jpg": "/im0ctavioibanez/static/media/about.6aab90c0.jpg",
     "static/media/atomic-1.png": "/im0ctavioibanez/static/media/atomic-1.0cdecfe7.png",
+    "static/media/citas.png": "/im0ctavioibanez/static/media/citas.ab1d1cfa.png",
     "static/media/cover.css": "/im0ctavioibanez/static/media/cover-bgd1.e69b19e9.jpg",
     "static/media/ecommerce-1.png": "/im0ctavioibanez/static/media/ecommerce-1.c8f38f8f.png",
     "static/media/ending.css": "/im0ctavioibanez/static/media/ending.431c6f0e.jpg",
     "static/media/inventario-1.png": "/im0ctavioibanez/static/media/inventario-1.905deb28.png",
+    "static/media/moba.png": "/im0ctavioibanez/static/media/moba.af567db9.png",
     "static/media/profile.jpeg": "/im0ctavioibanez/static/media/profile.19267044.jpeg",
     "static/media/tarian-1.png": "/im0ctavioibanez/static/media/tarian-1.fe6a1a59.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ee5fc235.js",
-    "static/js/2.bc7d61a8.chunk.js",
-    "static/css/main.cb3f0e32.chunk.css",
-    "static/js/main.2bfbf04c.chunk.js"
+    "static/js/2.c17d90ab.chunk.js",
+    "static/css/main.d083b343.chunk.css",
+    "static/js/main.b5991914.chunk.js"
   ]
 }
